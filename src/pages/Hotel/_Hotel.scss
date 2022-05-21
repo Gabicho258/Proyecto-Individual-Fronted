@@ -1,0 +1,75 @@
+html {
+    background-color: #f5f5f5;
+}
+
+.hotel-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 60px 0;
+
+    &__left {
+        // width: 50%;
+        width: 600px;
+    }
+
+    &__right {
+        display: flex;
+        width: 500px;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+
+        .icons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 20px;
+
+            .icon {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+    }
+
+}
+
+.comments {
+    margin-left: 40px;
+
+    .rate {
+        margin-left: 12px;
+    }
+
+    .addComment {
+        margin: 20px 0px 20px 11px;
+    }
+
+    .button-save__comment {
+        margin: 20px 10px 10px 11px;
+    }
+
+    .button-cancel__comment {
+        margin: 20px 0 10px 10px;
+        background-color: #a3a1a1;
+    }
+}
+
+
+
+
+
+.main-slide {
+    height: 355px;
+    width: auto;
+    max-width: 600;
+}
+
+.slide {
+    height: 80px;
+    width: auto;
+}

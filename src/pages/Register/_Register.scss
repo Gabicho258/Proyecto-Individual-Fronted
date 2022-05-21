@@ -1,0 +1,118 @@
+.register-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__left {
+        width: 50%;
+        height: 100%;
+        background-image: url(../../images/paisaje-vertical.jpg);
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__content {
+            width: 60%;
+
+            .title {
+                font-size: 4rem;
+                font-family: "Lato-Regular";
+                font-weight: bold;
+                color: #fff;
+                margin-bottom: 1rem;
+            }
+
+            .description {
+                font-size: 1.5rem;
+                font-family: "Lato-Regular";
+                color: #fff;
+                margin-bottom: 1rem;
+
+            }
+
+            span {
+                font-size: 1.5rem;
+                font-family: "Lato-Regular";
+                color: #fff;
+
+                a {
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: rgb(35, 205, 211);
+                }
+
+            }
+
+        }
+    }
+
+    &__right {
+        width: 50%;
+        height: 100%;
+        background-color: #f4eeee;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 3rem;
+            font-family: "Lato-Regular";
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 2rem;
+        }
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .formContainer {
+            text-align: center;
+            width: 80%;
+        }
+
+        .form-container {
+            text-align: center;
+            width: 80%;
+        }
+
+        .radio-label {
+            font-size: 1.1rem;
+            font-family: "Lato-Regular";
+            color: #000;
+            // margin-bottom: 1rem;
+
+            &:focus {
+
+                color: #000;
+            }
+        }
+
+        .button_login {
+            background-color: #ffff;
+            color: #000;
+            width: 35%;
+            padding: 10px 0;
+            margin: 30px auto 0;
+            border-radius: 15px;
+            font-size: 19px;
+            font-family: "Roboto-bold";
+            text-transform: none;
+
+            &:hover {
+                background-color: rgb(117, 15, 185);
+                color: #fff;
+            }
+        }
+    }
+}
