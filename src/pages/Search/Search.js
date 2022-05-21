@@ -17,7 +17,7 @@ export const Search = () => {
   return (
     <>
       <NavBar />
-      <Container>
+      <Container style={{ padding: "15px 0 70px" }}>
         <h1>Encuentra el hotel a tu medida</h1>
         <div className="cards-container">
           {hotels?.map((hotel, i) => (

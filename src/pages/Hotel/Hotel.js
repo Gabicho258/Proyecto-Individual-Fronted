@@ -12,7 +12,7 @@ import LocalParkingIcon from "@mui/icons-material/LocalParking";
 import TvIcon from "@mui/icons-material/Tv";
 
 import NavBar from "../../components/NavBar/NavBar";
-import { playa } from "../../images/images";
+import { playa, whatsAppButton } from "../../images/images";
 import "./_Hotel.scss";
 import { RatingComponent } from "../../components/Rating/RatingComponent";
 import { Comment } from "../../components/Comment/Comment";
@@ -106,7 +106,25 @@ export const Hotel = () => {
           <div className="hotel-info">
             <h1>{hotel?.name}</h1>
             {hotel?.stars >= 0 && <Rating readOnly value={hotel?.stars} />}
+
+            <p style={{ fontFamily: "Roboto-Bold" }}>
+              <span style={{ display: "block", padding: "3px 0" }}>
+                Correo: {hotel?.email}
+              </span>
+              <span style={{ display: "block", padding: "3px 0 6px" }}>
+                Número central: {hotel?.phone}
+              </span>
+            </p>
             <p style={{ fontFamily: "Roboto-Regular" }}>{hotel?.description}</p>
+            <img
+              src={whatsAppButton}
+              height="75"
+              className="whatsapp-button"
+              alt="whatsapp button"
+              onClick={() => {
+                window.open(hotel?.whatsapp_link, "_blank");
+              }}
+            />
             <div className="icons">
               {hotel?.wifi && (
                 <div className="icon">

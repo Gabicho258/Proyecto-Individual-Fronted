@@ -21,6 +21,12 @@ html {
         // justify-content: center;
         align-items: center;
 
+        .whatsapp-button {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
         .icons {
             margin-top: 20px;
             display: flex;
