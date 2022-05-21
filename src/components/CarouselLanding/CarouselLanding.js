@@ -32,7 +32,7 @@ const tutorialSteps = [
     imgPath: analizando,
   },
   {
-    label: "Selecciona un horario y reserva una habitación",
+    label: "Comunicate con el hotel por su WhatsApp para agendar tu cita",
     imgPath: agendando,
   },
   {
